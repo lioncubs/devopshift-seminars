@@ -1,0 +1,16 @@
+{
+    "python.pythonPath": "/home/vscode/.local/share/virtualenvs/multistage_build-aapS_nB1/bin/python",
+    "python.testing.pytestArgs": [
+        "flask-api"
+    ],
+    "python.testing.unittestEnabled": true,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./flask-api",
+        "-p",
+        "test*.py"
+    ]
+}

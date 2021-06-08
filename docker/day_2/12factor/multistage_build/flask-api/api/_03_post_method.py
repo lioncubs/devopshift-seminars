@@ -30,7 +30,7 @@ def book_create():
         error = json.dumps({'error': 'Invalid Content Type'})
         return json_response(error, 400)
 
-    data = request.json
+    data = json.loads(request.data)
     if not all([data.get('title'), data.get('author_id')]):
         error = json.dumps({'error': 'Missing field/s (title, author_id)'})
         return json_response(error, 400)
